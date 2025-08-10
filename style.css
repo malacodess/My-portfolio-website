@@ -124,7 +124,6 @@ h1, h2, h3, h4 {
 }
 
 /* Home Page Styles */
-/* Home Page Updates */
 .home-container {
     max-width: 900px;
     margin: 30px auto;
@@ -152,16 +151,16 @@ h1, h2, h3, h4 {
     background-color: var(--pink);var(--pink);
     border-radius: 20px;
     padding: 25px;
-    margin: 0 auto;
-    max-width: 600px;
+    max-width: 300px;
+    margin: 20px auto;
     box-shadow: var(--shadow);
 }
 
 .home-sections {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
-    justify-content: center; /* center the cards */
-    gap: 30px; /* horizontal + vertical spacing */
+    justify-content: center;
+    gap: 30px; 
     margin: 40px 0;
 }
 
@@ -171,8 +170,8 @@ h1, h2, h3, h4 {
     border-radius: 20px;
     padding: 25px;
     box-shadow: var(--shadow);
-    width: 350px; /* fixed equal width */
-    box-sizing: border-box; /* prevent padding from increasing width */
+    width: 350px; 
+    box-sizing: border-box; 
 }    
 
 .featured-box h2, .facts-box h2 {
@@ -235,10 +234,6 @@ h1, h2, h3, h4 {
     background-color: #d46a8a;
 }
 
-/* Remove old quick-links styles */
-.quick-links {
-    display: none;
-}
 
 
 .quick-link {
@@ -366,6 +361,15 @@ h1, h2, h3, h4 {
 .about-text {
     flex: 1;
 }
+.location {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid var(--pink);
+    padding-left: 0.5em;
+    margin: 10px 0;
+}
+
 
 .education-section, .skills-section {
     background-color: var(--pink);
@@ -383,6 +387,10 @@ h1, h2, h3, h4 {
 }
 
 .skills-grid {
+    background-color: var(--cream);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -403,6 +411,29 @@ h1, h2, h3, h4 {
     background-color: #cc8899;
     border-radius: 5px;
 }
+.language-section {
+    background-color: var(--cream);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#languages-heading {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    padding-left: 0.5em;
+    margin: 8px 0;
+}
+
+.language-item {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid var(--pink);
+    padding-left: 0.5em;
+    margin: 8px 0;
+}
+
 
 /* Links Page Styles */
 .links-container {
@@ -436,7 +467,7 @@ h1, h2, h3, h4 {
 
 .link-card:hover {
     transform: translateY(-5px);
-    background-color: #cc8899;
+    background-color: #ffb7c5;
 }
 
 .link-icon {
