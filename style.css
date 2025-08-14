@@ -76,53 +76,6 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
-/* Bunny Guide */
-
-.bunny-guide {
-    position: fixed;
-    width: 80px;
-    z-index: 100;
-    transition: all 0.5s ease;
-    bottom: 20px;
-    right: 20px;
-}
-
-.bunny-avatar {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
-}
-
-.speech-bubble {
-   position: fixed;
-    background: white;
-    border-radius: 10px;
-    padding: 8px 12px;
-    width: 180px;
-    box-shadow: var(--shadow);
-    font-size: 0.9rem;
-    animation: float 3s ease-in-out infinite;
-    z-index: 9998;
-    pointer-events: none;
-    transition: opacity 0.3s;
-    opacity: 1;
-}
-
-.speech-bubble::after {
-   content: '';
-    position: absolute;
-    left: -10px;
-    top: 15px;
-    border-width: 10px 10px 10px 0;
-    border-style: solid;
-    border-color: transparent white;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
 /* Home Page Styles */
 .home-container {
     max-width: 900px;
@@ -151,7 +104,7 @@ h1, h2, h3, h4 {
     background-color: var(--pink);var(--pink);
     border-radius: 20px;
     padding: 25px;
-    max-width: 300px;
+    max-width: 600px;
     margin: 20px auto;
     box-shadow: var(--shadow);
 }
@@ -531,4 +484,10 @@ h1, h2, h3, h4 {
         bottom: -10px;
         border-width: 10px 10px 0;
     }
+}
+@media (max-width: 500px) {
+.intro-card {
+    max-width: 300px;
+}
+
 }
