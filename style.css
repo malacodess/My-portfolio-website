@@ -489,5 +489,8 @@ h1, h2, h3, h4 {
 .intro-card {
     max-width: 300px;
 }
+.subtitle p {
+    max-width: 300px;
+}
 
 }
